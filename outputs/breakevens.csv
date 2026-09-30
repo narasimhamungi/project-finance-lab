@@ -1,0 +1,7 @@
+lever,threshold,dscr_level,breakeven
+revenue_haircut,DSCR 1.00x (payment),1.0,0.2155511781311361
+revenue_haircut,default-level DSCR,1.05,0.1847581526835711
+revenue_haircut,lock-up DSCR,1.15,0.12317210178844107
+opex_increase,DSCR 1.00x (payment),1.0,0.8784383004359597
+opex_increase,default-level DSCR,1.05,0.7529471146597189
+opex_increase,lock-up DSCR,1.15,0.5019647431061003

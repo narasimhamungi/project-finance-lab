@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-finance-lab"
+version = "0.1.0"
+description = "Cash-flow model of a hypothetical project financing: sculpted debt, DSCR/LLCR/PLCR, lock-up, breakevens"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7", "hypothesis>=6", "openpyxl>=3.1"]
+
+[project.scripts]
+project-finance-lab = "projectfinancelab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

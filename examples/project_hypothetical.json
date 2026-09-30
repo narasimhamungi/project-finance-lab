@@ -1,0 +1,20 @@
+{
+  "label": "Hypothetical contracted operating asset (illustrative inputs, not market terms or any real project)",
+  "units": "currency millions, nominal, annual periods",
+  "project": {
+    "construction_years": 2, "capex": 400.0, "capex_profile": [0.45, 0.55], "operation_years": 25,
+    "revenue_y1": 62.0, "revenue_growth": 0.02, "opex_y1": 14.0, "opex_growth": 0.025,
+    "tax_rate": 0.25, "depreciation_years": 20,
+    "debt_rate": 0.06, "debt_tenor": 18, "target_dscr": 1.35, "max_gearing": 0.90, "upfront_fee": 0.015,
+    "lockup_dscr": 1.15, "default_dscr": 1.05
+  },
+  "cases": {
+    "sponsor": {},
+    "base": {"revenue_haircut": 0.05, "opex_increase": 0.05},
+    "downside": {"revenue_haircut": 0.12, "opex_increase": 0.15, "capex_overrun": 0.05},
+    "delay_6m": {"delay_months": 6}
+  },
+  "grid": {"revenue_haircut": [0.0, 0.05, 0.10, 0.15, 0.20, 0.25, 0.30],
+           "opex_increase": [0.0, 0.10, 0.20, 0.30, 0.40]},
+  "rate_shifts": [-0.01, 0.0, 0.01]
+}
