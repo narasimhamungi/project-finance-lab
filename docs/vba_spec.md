@@ -1,7 +1,7 @@
 # VBA module: specification and acceptance tests
 
-**Status: specified, not built.** You write the macros; this is their contract. List VBA on a CV only after
-acceptance tests V1 to V6 pass in Excel. Save as `excel/project_finance_model.xlsm`; export the module to
+**Status: specified, not built.** This is the macros' contract; they are done when acceptance tests V1 to V6
+pass in Excel. Save as `excel/project_finance_model.xlsm`; export the module to
 `excel/vba/ProjectFinance.bas` so Git can diff it. The `.xlsx` stays as the formula-only version.
 
 ## Why VBA here (each macro does something formulas cannot)

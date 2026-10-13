@@ -17,8 +17,7 @@
 ## Results (30 Sep 2026)
 
 - pytest: 44 passed.
-- LibreOffice regression: 510 of 510 checks pass. The first run found 4 failures: LibreOffice's IRR with its default
-  starting guess returned no answer for projects whose equity IRR is negative. The workbook now tries a second guess
-  (-10%); after the fix all 510 pass. The same run confirmed the tests catch problems: an early case description with a
-  comma was caught by the no-quoting test, since a VBA reader splits on commas.
-- Not yet run: the workbook in Excel (VBA harness, `docs/vba_spec.md`).
+- LibreOffice regression: 510 of 510 checks pass. LibreOffice's IRR with its default starting guess returns no
+  answer for projects whose equity IRR is negative, so the workbook tries a second guess (-10%). The no-quoting test
+  rejects case descriptions containing commas, since a VBA reader splits on commas.
+- Not run: the workbook in Excel (VBA harness, `docs/vba_spec.md`).

@@ -22,8 +22,8 @@ reconciled across 34 input sets.
 - [x] Tests and CI: 44 pytest tests, including Hypothesis property tests of the identities for any valid project
 - [x] Excel workbook reproducing the model in formulas: [`excel/project_finance_model.xlsx`](excel/project_finance_model.xlsx)
 - [x] Workbook regression: 34 cases x 15 outputs; LibreOffice 24.2 passes 510 of 510 checks at 1e-6
-      ([`excel/regression/`](excel/regression/)). Its first run found that the workbook's equity IRR returned nothing for
-      negative-IRR cases; fixed
+      ([`excel/regression/`](excel/regression/)). It caught that the workbook's equity IRR returned nothing for
+      negative-IRR cases; the workbook now tries a second starting guess
 - [ ] VBA (circularity loop, stress grid, bisection breakeven, regression harness in Excel): specified with acceptance
       tests in [`docs/vba_spec.md`](docs/vba_spec.md), not built
 
